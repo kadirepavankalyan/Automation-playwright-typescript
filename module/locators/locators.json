@@ -1,0 +1,10 @@
+{
+  "textBoxHeading": "//*[@id='userName']",
+  "userNameInput": "//*[@id='userName']",
+  "userEmailInput": "//*[@id='userEmail']",
+  "currentAddressInput": "//*[@id='currentAddress']",
+  "permanentAddressInput": "//*[@id='permanentAddress']",
+  "submitButton": "//*[@id='submit']",
+  "output": "//*[@id='output']",
+  "checkboxButton": "//*[@id='tree-node']/ol/li/span/button"
+}

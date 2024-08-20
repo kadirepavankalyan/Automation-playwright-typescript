@@ -1,0 +1,15 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="18.602081000000002">
+<testsuite name="module\tests\ecommerceSite.spec.ts" timestamp="2024-08-20T06:43:01.377Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="16.946" errors="0">
+<testcase name="Page object test demo › Register test_01" classname="module\tests\ecommerceSite.spec.ts" time="16.946">
+<system-out>
+<![CDATA[TITLE: Register test_01
+STATUS: passed
+
+[[ATTACHMENT|test-results\module-tests-ecommerceSite-44c85--test-demo-Register-test-01-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\module-tests-ecommerceSite-44c85--test-demo-Register-test-01-Chrome\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
