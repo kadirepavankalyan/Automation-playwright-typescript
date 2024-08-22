@@ -4,7 +4,7 @@ test.describe('API Testing with Playwright', () => {
   let authToken: string;
   let userId: string;
 
-  test('POST request - Login API', async ({ request }) => {
+  test.beforeAll('POST request - Login API', async ({ request }) => {
     const requestBody = {
       userEmail: 'Pavankalyan@dipsotable.com',
       userPassword: 'Passw0rd!1'

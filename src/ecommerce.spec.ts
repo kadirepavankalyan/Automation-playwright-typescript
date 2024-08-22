@@ -13,8 +13,8 @@ test('Log in', async () => {
     await page.click("'Login'")
     await page.fill('#input-email', 'Pavankalyankadire@gmail.com');
     await page.fill('#input-password', 'Passw0rd!1');
-    await page.click('input[value="Login"]')
+    await page.click('input[value="Login"]');
 
     await page.waitForTimeout(3000);
     await expect(page.locator('//h2[normalize-space()="My Account"]')).toHaveText('My Account');
-})
+});

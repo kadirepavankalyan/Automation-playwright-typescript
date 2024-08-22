@@ -24,18 +24,35 @@ const config: PlaywrightTestConfig = defineConfig({
   ],
   projects: [
     {
-      name: 'Chrome',
+      name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
     /*{
-      name: 'Firefox',
+      name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
     {
-      name: 'Safari',
+      name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+    },
+    //  Test against mobile viewports.
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    },
+    {
+      name: 'Mobile Safari',
+      use: { ...devices['iPhone 12'] },
+    },
+    // Test against branded browsers.
+    {
+      name: 'Google Chrome',
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' }, // or 'chrome-beta'
+    },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' }, // or 'msedge-dev'
     }, */
-    // Add additional browsers or configurations here as needed
   ],
   // Global settings, e.g., retry settings or projects
   retries: 0, // Number of times to retry failed tests
