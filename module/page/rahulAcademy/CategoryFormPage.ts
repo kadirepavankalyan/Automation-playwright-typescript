@@ -69,7 +69,7 @@ export class CategoryFormPage {
         try {
             await expect(this.successMessage).toBeVisible();
             const messageText = await this.successMessage.textContent();
-            Logger.info(`Success message displayed: ${messageText?.trim()}`);
+            // Logger.info(`Success message displayed: ${messageText?.trim()}`);
             return messageText?.trim();
         } catch (error) {
             Logger.error('Success message not visible.', error);

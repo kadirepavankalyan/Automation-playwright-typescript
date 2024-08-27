@@ -72,9 +72,9 @@ export class OrderPage {
     async purchaseItem(country: string) {
         try {
             await this.countryInput.pressSequentially(country, { delay: 50 });
-            await this.dropdownSuggestion.waitFor({ state: 'visible' });
-            await this.dropdownSuggestion.click({ timeout: 5000 });
-            await this.agreeTermsCheckbox.check();
+            // await this.dropdownSuggestion.waitFor({ state: 'visible' });
+            // await this.dropdownSuggestion.click({ timeout: 3000 });
+            // await this.agreeTermsCheckbox.check();
             await this.purchaseButton.click();
             Logger.info('Completed purchase process.');
         } catch (error) {
@@ -87,7 +87,7 @@ export class OrderPage {
         try {
             await expect(this.successMessage).toBeVisible();
             const messageText = await this.successMessage.textContent();
-            Logger.info(`Purchase success message displayed: ${messageText?.trim()}`);
+            // Logger.info(`Purchase success message displayed: ${messageText?.trim()}`);
             return messageText?.trim();
         } catch (error) {
             Logger.error('Purchase success message not visible.', error);

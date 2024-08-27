@@ -3,19 +3,27 @@
   "version": "1.0.0",
   "description": "A project for running Playwright tests with TypeScript",
   "main": "index.js",
-  "scripts": {
-    "test": "npx playwright test",
-    "prepare": "tsc"
-  },
+ "scripts": {
+  "test": "npx playwright test",
+  "prepare": "tsc",
+  "test-allurereport": "npx playwright test --reporter='allure-playwright'",
+  "generate-allurereport": "npx allure generate allure-results --clean -o allure-report",
+  "open-allurereport": "npx allure open allure-report",
+  "test-and-open-allurereport": "npm run test-allurereport && npm run generate-allurereport && npm run open-allurereport"
+ },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.46.0",
-    "playwright": "^1.46.0"
+    "playwright": "^1.46.0",
+    "playwright-mail-reporter": "^0.0.7"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0-beta.10",
+    "playwright-html-reporter": "^0.1.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   }

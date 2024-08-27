@@ -45,7 +45,7 @@ test.describe('rahulshettyacademy.com', () => {
         await orderPage.proceedToCheckout();
         await orderPage.verifyItemInCart('iphone X');
         await orderPage.clickOnCheckOut();
-        await orderPage.purchaseItem('Ind');
+        await orderPage.purchaseItem('India');
         const successMessage = await orderPage.isSuccessMessageVisible();
         Logger.info(`Order success message: ${successMessage}`);
     });

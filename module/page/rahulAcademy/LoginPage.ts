@@ -86,7 +86,7 @@ export class LoginPage {
         try {
             await expect(this.header).toBeVisible();
             const headerText = await this.header.textContent();
-            Logger.info(`Header is visible with text: ${headerText?.trim()}`);
+            // Logger.info(`Header is visible with text: ${headerText?.trim()}`);
             return headerText?.trim();
         } catch (error) {
             Logger.error('Header is not visible after sign-in.', error);
