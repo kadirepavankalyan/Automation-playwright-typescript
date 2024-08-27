@@ -1,13 +1,11 @@
 import { defineConfig, PlaywrightTestConfig, devices } from '@playwright/test';
-import { dot } from 'node:test/reporters';
-import { report } from 'process';
 
 const config: PlaywrightTestConfig = defineConfig({
   // Uncomment and set the test directory if needed
   // testDir: './src',
   
   // Use a regex to match test files
-  testMatch: ["module/tests/rahulAcademy.spec.ts"],
+  // testMatch: ["module/tests/rahulAcademy.spec.ts"],
   
   timeout: 60000,
   
