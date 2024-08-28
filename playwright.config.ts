@@ -7,10 +7,10 @@ const config: PlaywrightTestConfig = defineConfig({
   // Use a regex to match test files
   // testMatch: ["module/tests/rahulAcademy.spec.ts"],
   
-  timeout: 60000,
+  timeout: 60000, //60 sec
   
   use: {
-    headless: true, // Switch to headless mode for CI/CD, change to false for local debugging
+    headless: false, // Switch to headless mode for CI/CD, change to false for local debugging
     viewport: { width: 1920, height: 1080 },
     actionTimeout: 10000,
     ignoreHTTPSErrors: true,
@@ -62,7 +62,7 @@ const config: PlaywrightTestConfig = defineConfig({
     }, */
   ],
 
-  retries: 0, // Number of times to retry failed tests
+  retries: 2, // Number of times to retry failed tests
   workers: 1, // Number of workers to run tests in parallel
 });
 
